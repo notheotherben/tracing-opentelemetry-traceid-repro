@@ -1,0 +1,13 @@
+[package]
+name = "tracing-opentelemetry-traceid-repro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+opentelemetry = { version = "0.20" }
+opentelemetry-stdout = { version = "0.1.0", features = ["trace"] }
+tracing = { version = "0.1.37", features = ["log"] }
+tracing-attributes = { version = "0.1.26" }
+tracing-futures = { version = "0.2.5", features = ["futures-03"] }
+tracing-opentelemetry = "0.20"
+tracing-subscriber = { version = "0.3.17", features = ["tracing-log"] }
